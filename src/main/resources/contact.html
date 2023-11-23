@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chieloka Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .nav ul {
+            margin-right: 2rem;
+            margin-left: auto;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            width: 400px;
+        }
+
+        .nav a {
+            color: #33323D;
+            font-family: 'Public Sans',serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            font-family: 'Arial', sans-serif;
+        }
+
+        form label {
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        form textarea {
+            width: 390px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        form input[type="submit"] {
+            font-size: 20px;
+            width: 400px;
+            height: 50px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .services-section {
+            margin-top: 100px;
+        }
+
+        h2 {
+            color: green;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about-me">About Me</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contact">Book Me</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="services-section">
+        <h2>What Project do you need my Services On?</h2>
+        <br>
+        <form action="/submit" method="post">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email"><b>Email:</b></label>
+            <input type="text" id="email" name="email" required>
+            <br>
+            <label for="message"><b>Message:</b></label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <input type="submit" value="BOOK MY SERVICES NOW">
+        </form>
+    </div>
+</div>
+</body>
+
+</html>
