@@ -22,7 +22,7 @@ class HtmlPageGenerator {
             line = reader.lines().collect(Collectors.joining("\n"));
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            line = generateErrorPage();
         }
         return line;
     }
@@ -34,7 +34,7 @@ class HtmlPageGenerator {
             line = reader.lines().collect(Collectors.joining("\n"));
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            line = generateErrorPage();
         }
         return line;
     }
@@ -46,7 +46,7 @@ class HtmlPageGenerator {
             line = reader.lines().collect(Collectors.joining("\n"));
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            line = generateErrorPage();
         }
         return line;
     }
@@ -58,7 +58,7 @@ class HtmlPageGenerator {
             line = reader.lines().collect(Collectors.joining("\n"));
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            line = generateErrorPage();
         }
         return line;
     }
